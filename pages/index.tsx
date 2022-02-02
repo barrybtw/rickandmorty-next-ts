@@ -19,7 +19,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
       </h1>
       <div className="flex flex-row flex-wrap gap-12 py-2 justify-center items-center">
         {characters.map((character) => (
-          <Link key={character.id} href={`/${character.id}`}>
+          <Link key={character.id} href={`/${character.id}`} passHref>
             <div className="flex flex-col items-center gap-4 bg-slate-50 p-6 text-2xl group hover:scale-105 transition-all duration-300 cursor-pointer glassmorhpism-card relative">
               <h1 className="font-nalieta tracking-wider font-extrabold text-4xl">
                 {character.name}
