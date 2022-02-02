@@ -27,10 +27,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const res = await fetch(
     `https://rickandmortyapi.com/api/character/${params?.id}`
   );
-  console.log("RES" + (await res));
 
   const results = await res.json();
-  console.log("RESULTS" + (await results));
 
   return {
     props: { character: results },
