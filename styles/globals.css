@@ -2,21 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-/* 
 @font-face {
   font-family: "Nalieta";
-  src: url("./../assets/fonts/Nalieta.otf");
+  src: local("Nalieta"), url("./../assets/fonts/Nalieta.otf") format("opentype");
+  font-display: swap;
 }
-@font-face {
-  font-family: "Marvel";
-  src: url("./../assets/fonts/Marvel.ttf");
-} */
 
 .center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.glassmorhpism-card {
+  background: rgba(238, 238, 238, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

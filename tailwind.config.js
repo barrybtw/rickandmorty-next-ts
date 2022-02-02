@@ -6,7 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto"],
+        nalieta: ["nalieta", "sans-serif", "helvetica"],
+      },
+      width: {
+        300: "300px",
+      },
+      height: {
+        300: "300px",
       },
     },
   },
