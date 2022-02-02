@@ -11,7 +11,7 @@ const Character: NextPage<{ character: Character }> = ({ character }) => {
         <meta
           name="description"
           content="Rick And Morty site built with Next.js & Typescript"
-        ></meta>
+         />
       </Head>
       <h1 className="font-nalieta text-9xl">{character.name}</h1>
       <img

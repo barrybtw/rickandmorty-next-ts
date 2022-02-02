@@ -12,7 +12,7 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
         <meta
           name="description"
           content="Rick And Morty site built with Next.js & Typescript"
-        ></meta>
+         />
       </Head>
       <h1 className="text-6xl tracking-widest text-center">
         The Rick & Mortyverse
