@@ -1,26 +1,26 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from "next/image";
 import { Character, getCharacterResults } from "../types";
 
 const Character: NextPage<{ character: Character }> = ({ character }) => {
   return (
-    <div className="w-screen h-screen flex items-center justify-center flex-col">
+    <article className="w-screen h-screen flex items-center justify-center flex-col">
       <Head>
         <title>{character.name} from Rick & Morty</title>
         <meta
           name="description"
           content="Rick And Morty site built with Next.js & Typescript"
-         />
+        />
       </Head>
       <h1 className="font-nalieta text-9xl">{character.name}</h1>
-      <img
+      <Image
         src={character.image}
         alt={character.name}
         width={300}
         height={300}
       />
-    </div>
+    </article>
   );
 };
 
